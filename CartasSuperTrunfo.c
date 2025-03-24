@@ -12,7 +12,7 @@ int main() {
 
     // Solicitação e leitura dos dados do usuário
     printf("Informe o estado: \n");
-    scanf("%s", estado);
+    scanf("%c", estado);
 
     printf("Informe o código: \n");
     scanf("%s", codigo_carta);
