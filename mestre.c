@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    unsigned char estado1[8], codigo_carta1[4], nome_cidade1[50], estado2[8], codigo_carta2[4], nome_cidade2[50], nome[2] = {"carta 1, carta 2"};
+    unsigned char estado1[8], codigo_carta1[4], nome_cidade1[50], estado2[8], codigo_carta2[4], nome_cidade2[50], nome[2] = {"carta 2, carta 1"};
     unsigned int pop1, pontos_turisticos1, pop2, pontos_turisticos2;
     float area1, pib1, DP1, PIBC1, SuperPoder1, area2, pib2, DP2, PIBC2, SuperPoder2;
 
