@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    unsigned estado[8], codigo_carta[4], nome_cidade[50];
-    unsigned pop, pontos_turisticos;
-    unsigned area, pib, DP, PIBC,SuperPoder;
+    unsigned char estado[8], codigo_carta[4], nome_cidade[50];
+    unsigned int pop, pontos_turisticos;
+    float area, pib, DP, PIBC,SuperPoder;
 
     printf("Informe o estado: \n");
     scanf("%s", estado);
@@ -28,6 +28,7 @@ int main() {
 
     DP = pop / area;
     PIBC = pib / pop;
+    SuperPoder = (pop + area + pib + pontos_turisticos + DP + PIBC);
 
     printf("Carta 1: \n");
     printf("Estado: %s\n", estado);
@@ -39,6 +40,7 @@ int main() {
     printf("Pontos turísticos: %d\n", pontos_turisticos);
     printf("Densidade populacional: %.2f hab/km²\n", DP);
     printf("PIB per capita: R$ %.2f\n", PIBC);
+    printf("Seu especial é: %f\n", SuperPoder);
 
     printf("Carta 2: \n");
     printf("Estado: %s\n", estado);
@@ -48,6 +50,7 @@ int main() {
     printf("Área: %2f km²\n", area);
     printf("PIB: R$ %f milhões\n", pib);
     printf("Pontos turísticos: %d\n", pontos_turisticos);
-
+    printf("Seu especial é: %f\n", SuperPoder);
+    
     return 0;
 }
